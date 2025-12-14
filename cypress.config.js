@@ -9,11 +9,15 @@ module.exports = defineConfig({
     html: true,
     json: true,
     charts: true,
+    overwrite: true,
     timestamp: "yyyy-mm-dd_HH-MM-ss",
   },
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+  },
+  env: {
+    baseUrl: "https://portal.desa.id/sandbox/user/sign-in",
   },
 });
