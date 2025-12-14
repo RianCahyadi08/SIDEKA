@@ -16,4 +16,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    baseUrl: "https://portal.desa.id/sandbox/user/sign-in",
+  },
 });
