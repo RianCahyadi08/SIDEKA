@@ -15,12 +15,15 @@ class HomePage {
     cy.realPress("Escape");
   }
 
-  filter() {
+  filter(no) {
     cy.get(
       'div[class*="el-select__wrapper is-filterable el-tooltip__trigger el-tooltip__trigger"]'
-    ).click();
+    )
+      .eq(no)
+      .click();
     cy.wait(500);
     cy.realPress("Enter");
+    cy.wait(500);
     cy.realPress("Escape");
   }
 
@@ -46,31 +49,31 @@ class HomePage {
   }
 
   detailCountPermohonan() {
-    cy.get('i[class*="fas fa-eye"]').eq(1).click();
+    cy.get('i[class*="fas fa-eye"]').eq(1).click({ force: true });
     cy.wait(500);
     cy.realPress("Escape");
   }
 
   detailCountJenisIzin() {
-    cy.get('i[class*="fas fa-eye"]').eq(2).click();
+    cy.get('i[class*="fas fa-eye"]').eq(2).click({ force: true });
     cy.wait(500);
     cy.realPress("Escape");
   }
 
   detailCountPegawai() {
-    cy.get('i[class*="fas fa-eye"]').eq(3).click();
+    cy.get('i[class*="fas fa-eye"]').eq(3).click({ force: true });
     cy.wait(500);
     cy.realPress("Escape");
   }
 
   detailCountKota() {
-    cy.get('i[class*="fas fa-eye"]').eq(4).click();
+    cy.get('i[class*="fas fa-eye"]').eq(4).click({ force: true });
     cy.wait(500);
     cy.realPress("Escape");
   }
 
   detailCountPengguna() {
-    cy.get('i[class*="fas fa-eye"]').eq(5).click();
+    cy.get('i[class*="fas fa-eye"]').eq(5).click({ force: true });
     cy.wait(500);
     cy.realPress("Escape");
   }
