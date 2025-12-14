@@ -33,6 +33,8 @@ class HomePage {
       .type(value)
       .should("have.value", value);
     cy.wait(500);
+    cy.realPress("Enter");
+    cy.wait(500);
     cy.realPress("Escape");
   }
 
