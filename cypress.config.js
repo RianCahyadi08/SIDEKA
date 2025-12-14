@@ -9,6 +9,7 @@ module.exports = defineConfig({
     html: true,
     json: true,
     charts: true,
+    overwrite: true,
     timestamp: "yyyy-mm-dd_HH-MM-ss",
   },
   e2e: {

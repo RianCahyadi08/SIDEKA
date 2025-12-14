@@ -26,6 +26,17 @@ class LoginPage {
     cy.get('input[name="email"]').type(email).should("have.value", email);
     cy.wait(500);
     cy.get('button[class*="btn btn-primary"]').click();
+    cy.wait(1000);
+  }
+
+  logout() {
+    cy.get('i[class*="far fa-user fs-3 text-primary-custom"]').click();
+    cy.wait(500);
+    cy.get('a[class*="active-link exact-active-link menu-link px-5"]').click();
+    cy.wait(500);
+    cy.get(
+      'button[class*="swal2-confirm btn btn-md btn-success swal2-styled"]'
+    ).click();
     cy.wait(500);
   }
 }
