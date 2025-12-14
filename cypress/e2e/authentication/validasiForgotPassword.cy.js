@@ -8,6 +8,6 @@ describe("SC04 - Validasi form Forgot Password", () => {
   });
 
   it("TC01 - Validasi field dengan menginput email", () => {
-    LoginPage.forgotPassword();
+    LoginPage.forgotPassword("admegov@gmail.com");
   });
 });
