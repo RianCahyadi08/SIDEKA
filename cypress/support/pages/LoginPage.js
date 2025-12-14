@@ -19,6 +19,15 @@ class LoginPage {
     this.clickBtnMasuk();
     cy.wait(1000);
   }
+
+  forgotPassword(email) {
+    cy.get('a[class*="link-primary text-hover-primary fs-7"]').click();
+    cy.wait(500);
+    cy.get('input[name="email"]').type(email).should("have.value", email);
+    cy.wait(500);
+    cy.get('button[class*="btn btn-primary"]').click();
+    cy.wait(500);
+  }
 }
 
 module.exports = new LoginPage();

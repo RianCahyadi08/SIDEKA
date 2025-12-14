@@ -1,6 +1,6 @@
 const LoginPage = require("../../support/pages/LoginPage");
 
-describe("SC02 - Validasi field password", () => {
+describe("SC03 - Validasi field password", () => {
   const env = Cypress.env("baseUrl");
 
   beforeEach(() => {
